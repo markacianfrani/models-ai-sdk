@@ -49,9 +49,9 @@
     "eslint-plugin-simple-import-sort": "12.1.1",
     "prettier": "^3",
     "tsup": "^8.3.0",
-    "typescript": "^5.7.2",
+    "typescript": "^5.9.2",
     "vitest": "^3",
-    "dotenv": "^17.2.0"
+    "dotenv": "^17.2.1"
   },
   "engines": {
     "node": ">=20"
