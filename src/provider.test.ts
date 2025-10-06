@@ -100,5 +100,20 @@ describe('GitHubModelsProvider', () => {
         }),
       )
     })
+
+    it('should support structured outputs for all models', () => {
+      const provider = createGitHubModels()
+      const modelId = 'openai/gpt-4o-mini'
+
+      const model = provider(modelId)
+      expect(model).toBeInstanceOf(OpenAICompatibleChatLanguageModel)
+      expect(OpenAICompatibleChatLanguageModelMock).toHaveBeenCalledWith(
+        modelId,
+        expect.objectContaining({
+          provider: 'github-models',
+          supportsStructuredOutputs: true,
+        }),
+      )
+    })
   })
 })
