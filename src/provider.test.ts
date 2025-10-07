@@ -100,5 +100,17 @@ describe('GitHubModelsProvider', () => {
         }),
       )
     })
+
+    it('should enable structured outputs for chat models', () => {
+      const provider = createGitHubModels()
+      provider('gpt-4')
+
+      expect(OpenAICompatibleChatLanguageModelMock).toHaveBeenCalledWith(
+        'gpt-4',
+        expect.objectContaining({
+          supportsStructuredOutputs: true,
+        }),
+      )
+    })
   })
 })
