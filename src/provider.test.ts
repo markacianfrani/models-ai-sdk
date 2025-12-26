@@ -91,7 +91,7 @@ describe('GitHubModelsProvider', () => {
       const provider = createGitHubModels()
       const modelId = 'model-id'
 
-      const model = provider.textEmbeddingModel(modelId)
+      const model = provider.embeddingModel(modelId)
       expect(model).toBeInstanceOf(OpenAICompatibleEmbeddingModel)
       expect(OpenAICompatibleEmbeddingModel).toHaveBeenCalledWith(
         modelId,

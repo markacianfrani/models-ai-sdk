@@ -16,6 +16,18 @@ The GitHub Models provider is available in the `@github/models` NPM package. You
 npm i @github/models
 ```
 
+### AI SDK Version Compatibility
+
+This package supports both AI SDK v5 and v6:
+
+```bash
+# Install latest version (AI SDK v6)
+npm i @github/models ai
+
+# Install v5-compatible version
+npm i @github/models@v5 ai@^5.0.0
+```
+
 ## Quick Start
 
 To get started, you'll need a [GitHub PAT (personal access token)](https://github.com/settings/tokens).

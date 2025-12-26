@@ -1,6 +1,6 @@
 {
   "name": "@github/models",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "type": "module",
@@ -37,22 +37,22 @@
   },
   "homepage": "https://github.com/github/models-ai-sdk#readme",
   "dependencies": {
-    "@ai-sdk/openai-compatible": "^1.0.21",
-    "@ai-sdk/provider": "^2.0.0",
-    "@ai-sdk/provider-utils": "^3.0.12",
-    "ai": "^5.0.68"
+    "@ai-sdk/openai-compatible": "^2.0.1",
+    "@ai-sdk/provider": "^3.0.0",
+    "@ai-sdk/provider-utils": "^4.0.1",
+    "ai": "^6.0.3"
   },
   "devDependencies": {
     "@github/prettier-config": "0.0.6",
-    "@types/node": "^24",
+    "@types/node": "^25.0.3",
     "dotenv": "^17.2.3",
-    "eslint": "^9",
+    "eslint": "^9.39.2",
     "eslint-plugin-github": "^6",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "prettier": "^3",
-    "tsup": "^8.3.0",
+    "prettier": "^3.7.4",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "vitest": "^3"
+    "vitest": "^4.0.16"
   },
   "engines": {
     "node": ">=20"
